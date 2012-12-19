@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+ <cron>
+ <url>/cron/checkgithubstatus</url>
+ <description>This Cron Job invokes all the Github status API methods and updates the cache with the results.</description>
+ <schedule>every 2 minutes</schedule>
+ </cron>
+ <cron>
+ <url>/cron/sendgithubstatus</url>
+ <description>This Cron Job sends an IM message to all ACTIVE subscribers if the last GitHub status is minor or major.</description>
+ <schedule>every 20 minutes</schedule>
+ </cron>
+</cronentries>
